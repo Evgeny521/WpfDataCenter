@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfDataCenter.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDataCenter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize">
+
+    <Grid>
+        <StackPanel Width="1920" Height="120" Margin="0 10 0 0"
+                HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Grid Background="Black"
+          Width="1920" Height="120"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Top"
+          Margin="0 10 0 0">
+                <Button Content="8 (800) 333 01 81"
+                Background="Black"
+                Foreground="White"
+                Width="200" Height="50"
+                Margin="282,30,1438,38">
+                </Button>
+                <Button Content="+7 (495) 640 10"
+                Background="Black" 
+                Width="200" Height="50" Margin="521,30,1199,38"
+                    >
+                </Button>
+                <Button Content="info@datacheap.ru"
+                Background="Black" 
+                Width="200" Height="50" Margin="758,30,962,38" 
+                    >
+                </Button>
+                <Button Content="Личный кабинет"
+                Background="Black" 
+                Width="200" Height="50" Margin="1175,30,545,38" 
+                    />
+                <Button Content="Looking glass"
+                Background="Black" 
+                Width="200" Height="50" Margin="1403,30,317,38"
+                    >
+                </Button>
+                <Button Content="RU EN"
+                Background="Black" 
+                Width="200" Height="50" Margin="1619,31,101,39">
+                </Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel Width="1920" Height="150"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Background="Gray" Margin="0,126,0,0">
+            <Grid>
+                <WrapPanel HorizontalAlignment="Right"
+                           VerticalAlignment="Center"
+                           Orientation="Horizontal"
+                           Width="700" Height="150">
+                    <Button Content="Наши услуги"
+                            Width="233" Height="150"
+                            FontSize="30">
+                        
+                    </Button>
+                    <Button Content="О компании"
+                            Width="233" Height="150"
+                            FontSize="30" >
+                    </Button>
+                    <Button Content="FAQ"
+                            Width="233" Height="150"
+                            FontSize="30" >
+                    </Button>
+                </WrapPanel>
+                <Image Source="/Image/icons8-логотип-48.png" 
+                       Width="300" Height="150"
+                       HorizontalAlignment="Left"
+                       Margin="330,0,0,0"/>
+            </Grid>
+            
+        </StackPanel>
+        <Frame x:Name="MyFrame" NavigationUIVisibility="Hidden"
+               VerticalAlignment="Bottom"
+               Height="800"/>
+    </Grid>
+</Window>
